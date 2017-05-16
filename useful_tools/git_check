@@ -1,0 +1,1 @@
+(find . -type d && find . -type f) | grep -v 'git' | sort

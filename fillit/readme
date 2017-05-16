@@ -1,0 +1,15 @@
+7 invalid cases:
+col = i % 5
+row = i / 5
+1. if col < 4 && buf[i] != # && buf[i] != '.'
+2. if col == 4 && buf[i] != '\n'
+3. ht_cnt != 4
+3. ht_cnt(hash tag count) > 4
+4. ht_cnt < 4 at the end
+5. nb_cnt(neighbro count) != 6 && nb_cnt != 8
+6. ret != 20 && ret != 21
+7. ret == 21, but buf[20] != '\n'
+8. fd == -1 e.g. input file name doesn't exist
+9. argc != 2
+
+10. The worst case test is 19 ‘-’, since the initial capsize is 9, but the solution capsize is 12 which results 3 level difference

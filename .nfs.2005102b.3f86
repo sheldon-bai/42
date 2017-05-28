@@ -1,0 +1,4 @@
+make -C ft_printf/ fclean && make -C ft_printf
+clang -Wall -Wextra -Werror -g -I libft/includes -o main1.o -c main1.c
+clang -g -o gnl main1.o -I ft_printf/includes -L ft_printf/ -lft
+./gnl
